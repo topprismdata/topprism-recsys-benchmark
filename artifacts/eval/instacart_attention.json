@@ -1,0 +1,87 @@
+{
+  "results": {
+    "lgbm_5count_diagnostic": {
+      "n": 20000,
+      "hr10": 0.00025,
+      "hr50": 0.0013,
+      "ndcg10": 9.570456463439171e-05,
+      "seconds": 6477.5,
+      "model_name": "LightGBM-5Count-Diagnostic"
+    },
+    "gru": {
+      "hr10": 0.1216,
+      "hr50": 0.28425,
+      "ndcg10": 0.06168743365522945,
+      "n": 20000,
+      "seconds": 12208.9,
+      "best_val_hr10": 0.182,
+      "epochs_run": 100
+    },
+    "hstu_aligned": {
+      "hr10": 0.08,
+      "hr50": 0.2033,
+      "ndcg10": 0.040500663616895104,
+      "n": 20000,
+      "seconds": 21226.2,
+      "best_val_hr10": 0.1035,
+      "epochs_run": 95
+    }
+  },
+  "protocol": {
+    "data": "instacart_official_mirror",
+    "users_sampled": 20000,
+    "sample_seed": 42,
+    "core": "5-core iterative",
+    "task": "LOO full-ranking no-seen-masking",
+    "model": "d128/2L/4H/L200",
+    "loss": "SS256+logq",
+    "epochs": 100,
+    "lr": 0.002
+  },
+  "results_v2_final": {
+    "lgbm_5count_diagnostic": {
+      "n": 20000,
+      "hr10": 0.00025,
+      "hr50": 0.0013,
+      "ndcg10": 9.570456463439171e-05,
+      "seconds": 6477.5,
+      "model_name": "LightGBM-5Count-Diagnostic"
+    },
+    "mean_pool": {
+      "hr10": 0.14605,
+      "hr50": 0.3096,
+      "ndcg10": 0.08073057213833013,
+      "n": 20000,
+      "seconds": 67298.9,
+      "best_val_hr10": 0.175,
+      "epochs_run": 100
+    },
+    "gru": {
+      "hr10": 0.1216,
+      "hr50": 0.28425,
+      "ndcg10": 0.06168743365522945,
+      "n": 20000,
+      "seconds": 12208.9,
+      "best_val_hr10": 0.182,
+      "epochs_run": 100
+    },
+    "sasrec": {
+      "hr10": 0.13495,
+      "hr50": 0.3014,
+      "ndcg10": 0.0673662814632586,
+      "n": 20000,
+      "seconds": 20748.7,
+      "best_val_hr10": 0.2211,
+      "epochs_run": 100
+    },
+    "hstu_aligned": {
+      "hr10": 0.08,
+      "hr50": 0.2033,
+      "ndcg10": 0.040500663616895104,
+      "n": 20000,
+      "seconds": 21226.2,
+      "best_val_hr10": 0.1035,
+      "epochs_run": 95
+    }
+  }
+}

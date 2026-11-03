@@ -1,0 +1,219 @@
+{
+  "protocol": {
+    "fusion": "RRF k=60 frozen (Cormack SIGIR 2009)",
+    "top_per_source": 500,
+    "ks": [
+      100,
+      300,
+      500
+    ],
+    "tie_break": "product_id ascending",
+    "stats_source": "s[:-1] (s[-1] never seen)",
+    "arms": {
+      "A0": [
+        "FREQ",
+        "RECENCY",
+        "POPULAR"
+      ],
+      "A1": [
+        "FREQ",
+        "RECENCY",
+        "POPULAR",
+        "ITEM_CF"
+      ],
+      "A2": [
+        "FREQ",
+        "RECENCY",
+        "POPULAR",
+        "ITEM_CF",
+        "SVD"
+      ]
+    },
+    "seed": 42,
+    "selftests": "5/5 PASS"
+  },
+  "n": {
+    "all": 20000,
+    "rep": 8841,
+    "new": 11159
+  },
+  "L1_source_capability": {
+    "FREQ": {
+      "recall": {
+        "100": {
+          "new": 0.0,
+          "rep": 0.9623
+        },
+        "300": {
+          "new": 0.0,
+          "rep": 0.9995
+        },
+        "500": {
+          "new": 0.0,
+          "rep": 1.0
+        }
+      },
+      "unique_targets_in_top500": 0
+    },
+    "RECENCY": {
+      "recall": {
+        "100": {
+          "new": 0.0,
+          "rep": 0.97
+        },
+        "300": {
+          "new": 0.0,
+          "rep": 1.0
+        },
+        "500": {
+          "new": 0.0,
+          "rep": 1.0
+        }
+      },
+      "unique_targets_in_top500": 0
+    },
+    "POPULAR": {
+      "recall": {
+        "100": {
+          "new": 0.1204,
+          "rep": 0.2401
+        },
+        "300": {
+          "new": 0.2196,
+          "rep": 0.3646
+        },
+        "500": {
+          "new": 0.2838,
+          "rep": 0.4404
+        }
+      },
+      "unique_targets_in_top500": 100
+    },
+    "ITEM_CF": {
+      "recall": {
+        "100": {
+          "new": 0.1393,
+          "rep": 0.2562
+        },
+        "300": {
+          "new": 0.2688,
+          "rep": 0.4113
+        },
+        "500": {
+          "new": 0.3436,
+          "rep": 0.503
+        }
+      },
+      "unique_targets_in_top500": 230
+    },
+    "SVD": {
+      "recall": {
+        "100": {
+          "new": 0.1369,
+          "rep": 0.4155
+        },
+        "300": {
+          "new": 0.2704,
+          "rep": 0.5588
+        },
+        "500": {
+          "new": 0.3497,
+          "rep": 0.6276
+        }
+      },
+      "unique_targets_in_top500": 1074
+    }
+  },
+  "L2_fusion_outcome": {
+    "A0": {
+      "100": {
+        "all": 0.4724,
+        "new": 0.079,
+        "rep": 0.969
+      },
+      "300": {
+        "all": 0.5546,
+        "new": 0.2023,
+        "rep": 0.9993
+      },
+      "500": {
+        "all": 0.5948,
+        "new": 0.2739,
+        "rep": 1.0
+      }
+    },
+    "A1": {
+      "100": {
+        "all": 0.4618,
+        "new": 0.0991,
+        "rep": 0.9197
+      },
+      "300": {
+        "all": 0.5687,
+        "new": 0.2294,
+        "rep": 0.9971
+      },
+      "500": {
+        "all": 0.6155,
+        "new": 0.3109,
+        "rep": 1.0
+      }
+    },
+    "A2": {
+      "100": {
+        "all": 0.456,
+        "new": 0.1208,
+        "rep": 0.879
+      },
+      "300": {
+        "all": 0.5846,
+        "new": 0.2601,
+        "rep": 0.994
+      },
+      "500": {
+        "all": 0.6355,
+        "new": 0.3471,
+        "rep": 0.9997
+      }
+    }
+  },
+  "L3_marginal_contribution": {
+    "A1_adds_ITEM_CF": {
+      "source_unique_opportunity": 864,
+      "100": {
+        "gained": 269,
+        "lost": 481,
+        "net": -212
+      },
+      "300": {
+        "gained": 379,
+        "lost": 97,
+        "net": 282
+      },
+      "500": {
+        "gained": 509,
+        "lost": 96,
+        "net": 413
+      }
+    },
+    "A2_adds_SVD": {
+      "source_unique_opportunity": 1074,
+      "100": {
+        "gained": 415,
+        "lost": 533,
+        "net": -118
+      },
+      "300": {
+        "gained": 487,
+        "lost": 171,
+        "net": 316
+      },
+      "500": {
+        "gained": 526,
+        "lost": 125,
+        "net": 401
+      }
+    }
+  },
+  "seconds": 216.2
+}

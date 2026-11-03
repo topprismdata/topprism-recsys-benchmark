@@ -1,0 +1,11 @@
+.superpowers/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/hm/*.parquet
+data/hm/*.csv
+data/*.parquet
+data/hm/*.part
+data/instacart/raw/
+data/instacart/seqs.json
+artifacts/eval/instacart_cache/

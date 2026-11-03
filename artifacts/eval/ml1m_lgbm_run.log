@@ -1,0 +1,20 @@
+[build] co-occurrence matrix
+[build] feature blocks (train stats only)
+  features 0/6040
+  features 1000/6040
+  features 2000/6040
+  features 3000/6040
+  features 4000/6040
+  features 5000/6040
+  features 6000/6040
+  features 0/6040
+  features 1000/6040
+  features 2000/6040
+  features 3000/6040
+  features 4000/6040
+  features 5000/6040
+  features 6000/6040
+[train] LightGBM on 1213679 rows (pos=6040)
+[train] done (137s); predicting full ranking
+[lgbm] HR@10=0.0255 HR@50=0.1571 NDCG@10=0.0105
+DONE

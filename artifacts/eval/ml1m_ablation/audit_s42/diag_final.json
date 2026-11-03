@@ -1,0 +1,36 @@
+{
+  "A2_trained": {
+    "q_grad": 0.41312557458877563,
+    "k_grad": 0.5915002226829529,
+    "pos_emb_grad": 29.57682228088379,
+    "qk_pos_grads_all_alive": true
+  },
+  "weight_content_sensitivity": {
+    "sasrec_full": {
+      "max_abs_prob_diff": 0.9542205333709717,
+      "weights_vary_with_content": true
+    },
+    "sasrec_pos_only": {
+      "max_abs_prob_diff": 0.0,
+      "weights_vary_with_content": false
+    }
+  },
+  "personalization": {
+    "sasrec_full": {
+      "mean_pairwise_top10_overlap": 0.3735,
+      "frac_pairs_overlap_ge8": 0.0
+    },
+    "sasrec_uniform": {
+      "mean_pairwise_top10_overlap": 10.0,
+      "frac_pairs_overlap_ge8": 1.0
+    },
+    "sasrec_pos_only": {
+      "mean_pairwise_top10_overlap": 10.0,
+      "frac_pairs_overlap_ge8": 1.0
+    },
+    "mean_pool": {
+      "mean_pairwise_top10_overlap": 0.5545,
+      "frac_pairs_overlap_ge8": 0.0
+    }
+  }
+}

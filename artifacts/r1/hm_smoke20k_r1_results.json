@@ -1,0 +1,1272 @@
+{
+  "contract_version": "0.9",
+  "generator_version": "r1_cand_v0.9",
+  "validation_cutoffs": [
+    "2020-08-18",
+    "2020-08-25",
+    "2020-09-01",
+    "2020-09-08"
+  ],
+  "sealed_cutoff": "2020-09-15",
+  "sealed_w5_labels_touched": false,
+  "candidate_pool_size_k": 100,
+  "oracle_curve_by_window": {
+    "W1": {
+      "K=50": {
+        "oracle_map12": 0.07002857966065902,
+        "recall_at_pool": 0.06946134733278034,
+        "avg_pool_size": 50.0
+      },
+      "K=100": {
+        "oracle_map12": 0.09434574887241279,
+        "recall_at_pool": 0.09365634606271087,
+        "avg_pool_size": 100.0
+      },
+      "K=200": {
+        "oracle_map12": 0.13135033975257207,
+        "recall_at_pool": 0.13050489529203416,
+        "avg_pool_size": 200.0
+      }
+    },
+    "W2": {
+      "K=50": {
+        "oracle_map12": 0.07513095589602266,
+        "recall_at_pool": 0.07496841903458754,
+        "avg_pool_size": 50.0
+      },
+      "K=100": {
+        "oracle_map12": 0.10142118196972041,
+        "recall_at_pool": 0.10107988762418821,
+        "avg_pool_size": 100.0
+      },
+      "K=200": {
+        "oracle_map12": 0.14179979669875012,
+        "recall_at_pool": 0.14126714215330782,
+        "avg_pool_size": 200.0
+      }
+    },
+    "W3": {
+      "K=50": {
+        "oracle_map12": 0.08309623784651948,
+        "recall_at_pool": 0.0828353072868954,
+        "avg_pool_size": 50.0
+      },
+      "K=100": {
+        "oracle_map12": 0.11471659625058046,
+        "recall_at_pool": 0.11432102563467776,
+        "avg_pool_size": 100.0
+      },
+      "K=200": {
+        "oracle_map12": 0.16122426724191652,
+        "recall_at_pool": 0.16064102908219094,
+        "avg_pool_size": 200.0
+      }
+    },
+    "W4": {
+      "K=50": {
+        "oracle_map12": 0.08516734447585511,
+        "recall_at_pool": 0.08490434133439279,
+        "avg_pool_size": 50.0
+      },
+      "K=100": {
+        "oracle_map12": 0.10995713801564866,
+        "recall_at_pool": 0.10951951814007313,
+        "avg_pool_size": 100.0
+      },
+      "K=200": {
+        "oracle_map12": 0.15262425222531606,
+        "recall_at_pool": 0.15189781147437798,
+        "avg_pool_size": 200.0
+      }
+    }
+  },
+  "oracle_curve_mean_w1_w4": {
+    "K=50": {
+      "mean_oracle_map12": 0.07835577946976408,
+      "mean_recall_at_pool": 0.078042353747164
+    },
+    "K=100": {
+      "mean_oracle_map12": 0.10511016627709058,
+      "mean_recall_at_pool": 0.1046441943654125
+    },
+    "K=200": {
+      "mean_oracle_map12": 0.14674966397963868,
+      "mean_recall_at_pool": 0.1460777195004777
+    }
+  },
+  "source_provenance_by_window": {
+    "W1": {
+      "cutoff_date": "2020-08-18",
+      "k_pool": 100,
+      "total_candidates": 2000000,
+      "avg_candidates_per_customer": 100.0,
+      "source_counts": {
+        "POPULAR": 755040,
+        "ITEM_COOC": 604502,
+        "EMBEDDING": 546418,
+        "TIME_DECAY": 54585,
+        "REPEAT": 39455
+      }
+    },
+    "W2": {
+      "cutoff_date": "2020-08-25",
+      "k_pool": 100,
+      "total_candidates": 2000000,
+      "avg_candidates_per_customer": 100.0,
+      "source_counts": {
+        "POPULAR": 700808,
+        "ITEM_COOC": 630602,
+        "EMBEDDING": 567848,
+        "TIME_DECAY": 58514,
+        "REPEAT": 42228
+      }
+    },
+    "W3": {
+      "cutoff_date": "2020-09-01",
+      "k_pool": 100,
+      "total_candidates": 2000000,
+      "avg_candidates_per_customer": 100.0,
+      "source_counts": {
+        "ITEM_COOC": 658214,
+        "POPULAR": 644044,
+        "EMBEDDING": 589332,
+        "TIME_DECAY": 62882,
+        "REPEAT": 45528
+      }
+    },
+    "W4": {
+      "cutoff_date": "2020-09-08",
+      "k_pool": 100,
+      "total_candidates": 2000000,
+      "avg_candidates_per_customer": 100.0,
+      "source_counts": {
+        "ITEM_COOC": 682073,
+        "EMBEDDING": 609751,
+        "POPULAR": 592339,
+        "TIME_DECAY": 67183,
+        "REPEAT": 48654
+      }
+    }
+  },
+  "b0_all_validation_windows_w1_w4": {
+    "per_window": {
+      "W1": {
+        "map12": 0.020101031969940675,
+        "evaluated_customers": 2419,
+        "all_customer_map12": 0.0024312198167643247,
+        "oracle_map12": 0.09434574887241279,
+        "recall_at_pool": 0.09365634606271087,
+        "oracle_utilization": 0.21305710336905626,
+        "oracle_upper_bound_satisfied": true,
+        "repeat_explore": {
+          "map12_total": 0.020101031969940675,
+          "map12_repeat": 0.017928187111585274,
+          "map12_explore": 0.0021728448583554,
+          "repeat_label_count": 236,
+          "explore_label_count": 7698,
+          "total_label_count": 7934
+        },
+        "strata": {
+          "S0": {
+            "map12": 0.010662855589249114,
+            "all_customer_map12": 0.0010967241014502164,
+            "map12_repeat": 0.007182122924058721,
+            "map12_explore": 0.003480732665190393,
+            "evaluated_customers": 1171,
+            "total_stratum_customers": 11385
+          },
+          "S1": {
+            "map12": 0.028139723508793422,
+            "all_customer_map12": 0.003193527703392396,
+            "map12_repeat": 0.02711738355855085,
+            "map12_explore": 0.0010223399502425718,
+            "evaluated_customers": 801,
+            "total_stratum_customers": 7058
+          },
+          "S2": {
+            "map12": 0.03042119442893119,
+            "all_customer_map12": 0.008733637706957124,
+            "map12_repeat": 0.029612962971930158,
+            "map12_explore": 0.0008082314570010319,
+            "evaluated_customers": 447,
+            "total_stratum_customers": 1557
+          }
+        }
+      },
+      "W2": {
+        "map12": 0.021390604515958953,
+        "evaluated_customers": 2771,
+        "all_customer_map12": 0.002963668255686113,
+        "oracle_map12": 0.10142118196972041,
+        "recall_at_pool": 0.10107988762418821,
+        "oracle_utilization": 0.21090864946087082,
+        "oracle_upper_bound_satisfied": true,
+        "repeat_explore": {
+          "map12_total": 0.021390604515958953,
+          "map12_repeat": 0.01827315055662223,
+          "map12_explore": 0.003117453959336725,
+          "repeat_label_count": 219,
+          "explore_label_count": 8619,
+          "total_label_count": 8838
+        },
+        "strata": {
+          "S0": {
+            "map12": 0.013815352970822965,
+            "all_customer_map12": 0.0017121210490884445,
+            "map12_repeat": 0.009124574654314432,
+            "map12_explore": 0.004690778316508534,
+            "evaluated_customers": 1345,
+            "total_stratum_customers": 10853
+          },
+          "S1": {
+            "map12": 0.026565469465524835,
+            "all_customer_map12": 0.003252253108374312,
+            "map12_repeat": 0.02431400568997468,
+            "map12_explore": 0.0022514637755501545,
+            "evaluated_customers": 903,
+            "total_stratum_customers": 7376
+          },
+          "S2": {
+            "map12": 0.03193708688450562,
+            "all_customer_map12": 0.009431449147711147,
+            "map12_repeat": 0.03137055476921634,
+            "map12_explore": 0.0005665321152892854,
+            "evaluated_customers": 523,
+            "total_stratum_customers": 1771
+          }
+        }
+      },
+      "W3": {
+        "map12": 0.022497658507098436,
+        "evaluated_customers": 2663,
+        "all_customer_map12": 0.002995563230220157,
+        "oracle_map12": 0.11471659625058046,
+        "recall_at_pool": 0.11432102563467776,
+        "oracle_utilization": 0.19611511535746598,
+        "oracle_upper_bound_satisfied": true,
+        "repeat_explore": {
+          "map12_total": 0.022497658507098436,
+          "map12_repeat": 0.018809595048307207,
+          "map12_explore": 0.0036880634587912295,
+          "repeat_label_count": 221,
+          "explore_label_count": 8335,
+          "total_label_count": 8556
+        },
+        "strata": {
+          "S0": {
+            "map12": 0.016370469396010348,
+            "all_customer_map12": 0.001985365002426018,
+            "map12_repeat": 0.009629204683169102,
+            "map12_explore": 0.006741264712841244,
+            "evaluated_customers": 1242,
+            "total_stratum_customers": 10241
+          },
+          "S1": {
+            "map12": 0.02668259211640747,
+            "all_customer_map12": 0.0030947813588763145,
+            "map12_repeat": 0.02549119632684705,
+            "map12_explore": 0.0011913957895604169,
+            "evaluated_customers": 899,
+            "total_stratum_customers": 7751
+          },
+          "S2": {
+            "map12": 0.029868757283348597,
+            "all_customer_map12": 0.007764686903340622,
+            "map12_repeat": 0.029145390611706064,
+            "map12_explore": 0.0007233666716425336,
+            "evaluated_customers": 522,
+            "total_stratum_customers": 2008
+          }
+        }
+      },
+      "W4": {
+        "map12": 0.025274848368028457,
+        "evaluated_customers": 2444,
+        "all_customer_map12": 0.0030885864705730774,
+        "oracle_map12": 0.10995713801564866,
+        "recall_at_pool": 0.10951951814007313,
+        "oracle_utilization": 0.22986091511795662,
+        "oracle_upper_bound_satisfied": true,
+        "repeat_explore": {
+          "map12_total": 0.025274848368028457,
+          "map12_repeat": 0.021747701380901735,
+          "map12_explore": 0.0035271469871267238,
+          "repeat_label_count": 213,
+          "explore_label_count": 7363,
+          "total_label_count": 7576
+        },
+        "strata": {
+          "S0": {
+            "map12": 0.01898115919023657,
+            "all_customer_map12": 0.002042885807497261,
+            "map12_repeat": 0.012905760327635327,
+            "map12_explore": 0.006075398862601243,
+            "evaluated_customers": 1040,
+            "total_stratum_customers": 9663
+          },
+          "S1": {
+            "map12": 0.03157330788944546,
+            "all_customer_map12": 0.003198335084904864,
+            "map12_repeat": 0.029079061982501136,
+            "map12_explore": 0.002494245906944319,
+            "evaluated_customers": 819,
+            "total_stratum_customers": 8085
+          },
+          "S2": {
+            "map12": 0.027645785798563575,
+            "all_customer_map12": 0.007181520733641071,
+            "map12_repeat": 0.027202802855580636,
+            "map12_explore": 0.00044298294298294295,
+            "evaluated_customers": 585,
+            "total_stratum_customers": 2252
+          }
+        }
+      }
+    },
+    "mean_map12_w1_w4": 0.02231603584025663
+  },
+  "primary_w4_evaluation": {
+    "cutoff_date": "2020-09-08",
+    "train_windows": [
+      "W1",
+      "W2",
+      "W3"
+    ],
+    "oracle_curve": {
+      "K=50": {
+        "oracle_map12": 0.08516734447585511,
+        "recall_at_pool": 0.08490434133439279,
+        "avg_pool_size": 50.0
+      },
+      "K=100": {
+        "oracle_map12": 0.10995713801564866,
+        "recall_at_pool": 0.10951951814007313,
+        "avg_pool_size": 100.0
+      },
+      "K=200": {
+        "oracle_map12": 0.15262425222531606,
+        "recall_at_pool": 0.15189781147437798,
+        "avg_pool_size": 200.0
+      }
+    },
+    "models": {
+      "B0_rule": {
+        "map12": 0.025274848368028457,
+        "evaluated_customers": 2444,
+        "all_customer_map12": 0.0030885864705730774,
+        "oracle_map12": 0.10995713801564866,
+        "recall_at_pool": 0.10951951814007313,
+        "oracle_utilization": 0.22986091511795662,
+        "oracle_upper_bound_satisfied": true,
+        "repeat_explore": {
+          "map12_total": 0.025274848368028457,
+          "map12_repeat": 0.021747701380901735,
+          "map12_explore": 0.0035271469871267238,
+          "repeat_label_count": 213,
+          "explore_label_count": 7363,
+          "total_label_count": 7576
+        },
+        "strata": {
+          "S0": {
+            "map12": 0.01898115919023657,
+            "all_customer_map12": 0.002042885807497261,
+            "map12_repeat": 0.012905760327635327,
+            "map12_explore": 0.006075398862601243,
+            "evaluated_customers": 1040,
+            "total_stratum_customers": 9663
+          },
+          "S1": {
+            "map12": 0.03157330788944546,
+            "all_customer_map12": 0.003198335084904864,
+            "map12_repeat": 0.029079061982501136,
+            "map12_explore": 0.002494245906944319,
+            "evaluated_customers": 819,
+            "total_stratum_customers": 8085
+          },
+          "S2": {
+            "map12": 0.027645785798563575,
+            "all_customer_map12": 0.007181520733641071,
+            "map12_repeat": 0.027202802855580636,
+            "map12_explore": 0.00044298294298294295,
+            "evaluated_customers": 585,
+            "total_stratum_customers": 2252
+          }
+        }
+      },
+      "B1_strong_lgbm": {
+        "map12": 0.025173180269906458,
+        "evaluated_customers": 2444,
+        "all_customer_map12": 0.003076162628982569,
+        "oracle_map12": 0.10995713801564866,
+        "recall_at_pool": 0.10951951814007313,
+        "oracle_utilization": 0.2289362993998981,
+        "oracle_upper_bound_satisfied": true,
+        "repeat_explore": {
+          "map12_total": 0.025173180269906458,
+          "map12_repeat": 0.01861943419820826,
+          "map12_explore": 0.006553746071698199,
+          "repeat_label_count": 213,
+          "explore_label_count": 7363,
+          "total_label_count": 7576
+        },
+        "strata": {
+          "S0": {
+            "map12": 0.01803883067164317,
+            "all_customer_map12": 0.0019414657868683533,
+            "map12_repeat": 0.010300544363044364,
+            "map12_explore": 0.007738286308598808,
+            "evaluated_customers": 1040,
+            "total_stratum_customers": 9663
+          },
+          "S1": {
+            "map12": 0.0328636576463485,
+            "all_customer_map12": 0.0033290458395002376,
+            "map12_repeat": 0.02608083141907783,
+            "map12_explore": 0.0067828262272706715,
+            "evaluated_customers": 819,
+            "total_stratum_customers": 8085
+          },
+          "S2": {
+            "map12": 0.027089800117577896,
+            "all_customer_map12": 0.0070370928369374195,
+            "map12_repeat": 0.022962615573726683,
+            "map12_explore": 0.0041271845438512105,
+            "evaluated_customers": 585,
+            "total_stratum_customers": 2252
+          }
+        }
+      },
+      "B2_lgbm_svd_emb": {
+        "map12": 0.024985103841803438,
+        "evaluated_customers": 2444,
+        "all_customer_map12": 0.00305317968946838,
+        "oracle_map12": 0.10995713801564866,
+        "recall_at_pool": 0.10951951814007313,
+        "oracle_utilization": 0.2272258472046413,
+        "oracle_upper_bound_satisfied": true,
+        "repeat_explore": {
+          "map12_total": 0.024985103841803438,
+          "map12_repeat": 0.018106153188156737,
+          "map12_explore": 0.006878950653646703,
+          "repeat_label_count": 213,
+          "explore_label_count": 7363,
+          "total_label_count": 7576
+        },
+        "strata": {
+          "S0": {
+            "map12": 0.01705432984674056,
+            "all_customer_map12": 0.0018355068861233758,
+            "map12_repeat": 0.009803622303622304,
+            "map12_explore": 0.007250707543118257,
+            "evaluated_customers": 1040,
+            "total_stratum_customers": 9663
+          },
+          "S1": {
+            "map12": 0.03398426186785975,
+            "all_customer_map12": 0.0034425615918091696,
+            "map12_repeat": 0.025386532436796987,
+            "map12_explore": 0.008597729431062764,
+            "evaluated_customers": 819,
+            "total_stratum_customers": 8085
+          },
+          "S2": {
+            "map12": 0.02648543637432526,
+            "all_customer_map12": 0.006880097814822504,
+            "map12_repeat": 0.02267367714589937,
+            "map12_explore": 0.003811759228425895,
+            "evaluated_customers": 585,
+            "total_stratum_customers": 2252
+          }
+        }
+      }
+    },
+    "paired_bootstrap_ci": {
+      "B1_vs_B0": {
+        "mean_a": 0.025274848368028457,
+        "mean_b": 0.025173180269906458,
+        "mean_diff": -0.0001016680981219991,
+        "ci_lower": -0.0028347704248041445,
+        "ci_upper": 0.0026721007272868975,
+        "p_value_two_sided": 0.98,
+        "statistically_significant": false,
+        "n_evaluated_customers": 2444
+      },
+      "B2_vs_B1": {
+        "mean_a": 0.025173180269906458,
+        "mean_b": 0.024985103841803438,
+        "mean_diff": -0.00018807642810302386,
+        "ci_lower": -0.0024247360815441168,
+        "ci_upper": 0.0019648107568652783,
+        "p_value_two_sided": 0.836,
+        "statistically_significant": false,
+        "n_evaluated_customers": 2444
+      },
+      "B2_vs_B0": {
+        "mean_a": 0.025274848368028457,
+        "mean_b": 0.024985103841803438,
+        "mean_diff": -0.00028974452622502296,
+        "ci_lower": -0.003158737598802189,
+        "ci_upper": 0.0026863121354200685,
+        "p_value_two_sided": 0.852,
+        "statistically_significant": false,
+        "n_evaluated_customers": 2444
+      }
+    }
+  },
+  "walk_forward_w2_w4": {
+    "per_window": {
+      "W2": {
+        "cutoff_date": "2020-08-25",
+        "train_windows": [
+          "W1"
+        ],
+        "oracle_curve": {
+          "K=50": {
+            "oracle_map12": 0.07513095589602266,
+            "recall_at_pool": 0.07496841903458754,
+            "avg_pool_size": 50.0
+          },
+          "K=100": {
+            "oracle_map12": 0.10142118196972041,
+            "recall_at_pool": 0.10107988762418821,
+            "avg_pool_size": 100.0
+          },
+          "K=200": {
+            "oracle_map12": 0.14179979669875012,
+            "recall_at_pool": 0.14126714215330782,
+            "avg_pool_size": 200.0
+          }
+        },
+        "models": {
+          "B0_rule": {
+            "map12": 0.021390604515958953,
+            "evaluated_customers": 2771,
+            "all_customer_map12": 0.002963668255686113,
+            "oracle_map12": 0.10142118196972041,
+            "recall_at_pool": 0.10107988762418821,
+            "oracle_utilization": 0.21090864946087082,
+            "oracle_upper_bound_satisfied": true,
+            "repeat_explore": {
+              "map12_total": 0.021390604515958953,
+              "map12_repeat": 0.01827315055662223,
+              "map12_explore": 0.003117453959336725,
+              "repeat_label_count": 219,
+              "explore_label_count": 8619,
+              "total_label_count": 8838
+            },
+            "strata": {
+              "S0": {
+                "map12": 0.013815352970822965,
+                "all_customer_map12": 0.0017121210490884445,
+                "map12_repeat": 0.009124574654314432,
+                "map12_explore": 0.004690778316508534,
+                "evaluated_customers": 1345,
+                "total_stratum_customers": 10853
+              },
+              "S1": {
+                "map12": 0.026565469465524835,
+                "all_customer_map12": 0.003252253108374312,
+                "map12_repeat": 0.02431400568997468,
+                "map12_explore": 0.0022514637755501545,
+                "evaluated_customers": 903,
+                "total_stratum_customers": 7376
+              },
+              "S2": {
+                "map12": 0.03193708688450562,
+                "all_customer_map12": 0.009431449147711147,
+                "map12_repeat": 0.03137055476921634,
+                "map12_explore": 0.0005665321152892854,
+                "evaluated_customers": 523,
+                "total_stratum_customers": 1771
+              }
+            }
+          },
+          "B1_strong_lgbm": {
+            "map12": 0.022474877306538635,
+            "evaluated_customers": 2771,
+            "all_customer_map12": 0.003113894250820928,
+            "oracle_map12": 0.10142118196972041,
+            "recall_at_pool": 0.10107988762418821,
+            "oracle_utilization": 0.22159944175417493,
+            "oracle_upper_bound_satisfied": true,
+            "repeat_explore": {
+              "map12_total": 0.022474877306538635,
+              "map12_repeat": 0.016222852157532778,
+              "map12_explore": 0.006252025149005861,
+              "repeat_label_count": 219,
+              "explore_label_count": 8619,
+              "total_label_count": 8838
+            },
+            "strata": {
+              "S0": {
+                "map12": 0.015156631530076547,
+                "all_customer_map12": 0.0018783441820651393,
+                "map12_repeat": 0.007629644381503119,
+                "map12_explore": 0.00752698714857343,
+                "evaluated_customers": 1345,
+                "total_stratum_customers": 10853
+              },
+              "S1": {
+                "map12": 0.028782994875187564,
+                "all_customer_map12": 0.0035237316122958746,
+                "map12_repeat": 0.02213322980903269,
+                "map12_explore": 0.006649765066154879,
+                "evaluated_customers": 903,
+                "total_stratum_customers": 7376
+              },
+              "S2": {
+                "map12": 0.03040376909401766,
+                "all_customer_map12": 0.00897863988490753,
+                "map12_repeat": 0.02811729468039219,
+                "map12_explore": 0.0022864744136254656,
+                "evaluated_customers": 523,
+                "total_stratum_customers": 1771
+              }
+            }
+          },
+          "B2_lgbm_svd_emb": {
+            "map12": 0.020122429215845724,
+            "evaluated_customers": 2771,
+            "all_customer_map12": 0.0027879625678554247,
+            "oracle_map12": 0.10142118196972041,
+            "recall_at_pool": 0.10107988762418821,
+            "oracle_utilization": 0.1984046017315528,
+            "oracle_upper_bound_satisfied": true,
+            "repeat_explore": {
+              "map12_total": 0.020122429215845724,
+              "map12_repeat": 0.014944034625686425,
+              "map12_explore": 0.005178394590159296,
+              "repeat_label_count": 219,
+              "explore_label_count": 8619,
+              "total_label_count": 8838
+            },
+            "strata": {
+              "S0": {
+                "map12": 0.013334321261830555,
+                "all_customer_map12": 0.0016525073341161058,
+                "map12_repeat": 0.007720500276262358,
+                "map12_explore": 0.005613820985568197,
+                "evaluated_customers": 1345,
+                "total_stratum_customers": 10853
+              },
+              "S1": {
+                "map12": 0.02602185036570419,
+                "all_customer_map12": 0.0031857010412460526,
+                "map12_repeat": 0.018886185591611947,
+                "map12_explore": 0.007135664774092238,
+                "evaluated_customers": 903,
+                "total_stratum_customers": 7376
+              },
+              "S2": {
+                "map12": 0.02739361066867213,
+                "all_customer_map12": 0.008089699819150495,
+                "map12_repeat": 0.02671438142825742,
+                "map12_explore": 0.0006792292404147089,
+                "evaluated_customers": 523,
+                "total_stratum_customers": 1771
+              }
+            }
+          }
+        },
+        "paired_bootstrap_ci": {
+          "B1_vs_B0": {
+            "mean_a": 0.021390604515958953,
+            "mean_b": 0.022474877306538635,
+            "mean_diff": 0.0010842727905796858,
+            "ci_lower": -0.001279642565956171,
+            "ci_upper": 0.003653614492437388,
+            "p_value_two_sided": 0.368,
+            "statistically_significant": false,
+            "n_evaluated_customers": 2771
+          },
+          "B2_vs_B1": {
+            "mean_a": 0.022474877306538635,
+            "mean_b": 0.020122429215845724,
+            "mean_diff": -0.0023524480906929146,
+            "ci_lower": -0.004218922355715954,
+            "ci_upper": -0.00033008841159205376,
+            "p_value_two_sided": 0.028,
+            "statistically_significant": true,
+            "n_evaluated_customers": 2771
+          },
+          "B2_vs_B0": {
+            "mean_a": 0.021390604515958953,
+            "mean_b": 0.020122429215845724,
+            "mean_diff": -0.001268175300113229,
+            "ci_lower": -0.0038575550030075863,
+            "ci_upper": 0.0011471701216893765,
+            "p_value_two_sided": 0.312,
+            "statistically_significant": false,
+            "n_evaluated_customers": 2771
+          }
+        }
+      },
+      "W3": {
+        "cutoff_date": "2020-09-01",
+        "train_windows": [
+          "W1",
+          "W2"
+        ],
+        "oracle_curve": {
+          "K=50": {
+            "oracle_map12": 0.08309623784651948,
+            "recall_at_pool": 0.0828353072868954,
+            "avg_pool_size": 50.0
+          },
+          "K=100": {
+            "oracle_map12": 0.11471659625058046,
+            "recall_at_pool": 0.11432102563467776,
+            "avg_pool_size": 100.0
+          },
+          "K=200": {
+            "oracle_map12": 0.16122426724191652,
+            "recall_at_pool": 0.16064102908219094,
+            "avg_pool_size": 200.0
+          }
+        },
+        "models": {
+          "B0_rule": {
+            "map12": 0.022497658507098436,
+            "evaluated_customers": 2663,
+            "all_customer_map12": 0.002995563230220157,
+            "oracle_map12": 0.11471659625058046,
+            "recall_at_pool": 0.11432102563467776,
+            "oracle_utilization": 0.19611511535746598,
+            "oracle_upper_bound_satisfied": true,
+            "repeat_explore": {
+              "map12_total": 0.022497658507098436,
+              "map12_repeat": 0.018809595048307207,
+              "map12_explore": 0.0036880634587912295,
+              "repeat_label_count": 221,
+              "explore_label_count": 8335,
+              "total_label_count": 8556
+            },
+            "strata": {
+              "S0": {
+                "map12": 0.016370469396010348,
+                "all_customer_map12": 0.001985365002426018,
+                "map12_repeat": 0.009629204683169102,
+                "map12_explore": 0.006741264712841244,
+                "evaluated_customers": 1242,
+                "total_stratum_customers": 10241
+              },
+              "S1": {
+                "map12": 0.02668259211640747,
+                "all_customer_map12": 0.0030947813588763145,
+                "map12_repeat": 0.02549119632684705,
+                "map12_explore": 0.0011913957895604169,
+                "evaluated_customers": 899,
+                "total_stratum_customers": 7751
+              },
+              "S2": {
+                "map12": 0.029868757283348597,
+                "all_customer_map12": 0.007764686903340622,
+                "map12_repeat": 0.029145390611706064,
+                "map12_explore": 0.0007233666716425336,
+                "evaluated_customers": 522,
+                "total_stratum_customers": 2008
+              }
+            }
+          },
+          "B1_strong_lgbm": {
+            "map12": 0.02457355721336999,
+            "evaluated_customers": 2663,
+            "all_customer_map12": 0.0032719691429602144,
+            "oracle_map12": 0.11471659625058046,
+            "recall_at_pool": 0.11432102563467776,
+            "oracle_utilization": 0.21421100360834364,
+            "oracle_upper_bound_satisfied": true,
+            "repeat_explore": {
+              "map12_total": 0.02457355721336999,
+              "map12_repeat": 0.017427807481318558,
+              "map12_explore": 0.007145749732051432,
+              "repeat_label_count": 221,
+              "explore_label_count": 8335,
+              "total_label_count": 8556
+            },
+            "strata": {
+              "S0": {
+                "map12": 0.018024479599416336,
+                "all_customer_map12": 0.002185958760128414,
+                "map12_repeat": 0.010283418495978882,
+                "map12_explore": 0.007741061103437455,
+                "evaluated_customers": 1242,
+                "total_stratum_customers": 10241
+              },
+              "S1": {
+                "map12": 0.028841784014197805,
+                "all_customer_map12": 0.003345215304962434,
+                "map12_repeat": 0.021395355509649168,
+                "map12_explore": 0.007446428504548638,
+                "evaluated_customers": 899,
+                "total_stratum_customers": 7751
+              },
+              "S2": {
+                "map12": 0.03280501028345856,
+                "all_customer_map12": 0.008527995701177972,
+                "map12_repeat": 0.027593526719484573,
+                "map12_explore": 0.005211483563973985,
+                "evaluated_customers": 522,
+                "total_stratum_customers": 2008
+              }
+            }
+          },
+          "B2_lgbm_svd_emb": {
+            "map12": 0.023442602934795324,
+            "evaluated_customers": 2663,
+            "all_customer_map12": 0.0031213825807679973,
+            "oracle_map12": 0.11471659625058046,
+            "recall_at_pool": 0.11432102563467776,
+            "oracle_utilization": 0.20435232303779852,
+            "oracle_upper_bound_satisfied": true,
+            "repeat_explore": {
+              "map12_total": 0.023442602934795324,
+              "map12_repeat": 0.01589706138147745,
+              "map12_explore": 0.00754554155331787,
+              "repeat_label_count": 221,
+              "explore_label_count": 8335,
+              "total_label_count": 8556
+            },
+            "strata": {
+              "S0": {
+                "map12": 0.016330318511779865,
+                "all_customer_map12": 0.0019804956148452876,
+                "map12_repeat": 0.009053657694962042,
+                "map12_explore": 0.007276660816817822,
+                "evaluated_customers": 1242,
+                "total_stratum_customers": 10241
+              },
+              "S1": {
+                "map12": 0.028592076413266623,
+                "all_customer_map12": 0.0033162529603311436,
+                "map12_repeat": 0.01875187598213182,
+                "map12_explore": 0.009840200431134802,
+                "evaluated_customers": 899,
+                "total_stratum_customers": 7751
+              },
+              "S2": {
+                "map12": 0.03149639718046487,
+                "all_customer_map12": 0.008187808430379811,
+                "map12_repeat": 0.027263017421063396,
+                "map12_explore": 0.004233379759401471,
+                "evaluated_customers": 522,
+                "total_stratum_customers": 2008
+              }
+            }
+          }
+        },
+        "paired_bootstrap_ci": {
+          "B1_vs_B0": {
+            "mean_a": 0.022497658507098436,
+            "mean_b": 0.02457355721336999,
+            "mean_diff": 0.0020758987062715565,
+            "ci_lower": -0.0003928459224017807,
+            "ci_upper": 0.004462259050409578,
+            "p_value_two_sided": 0.104,
+            "statistically_significant": false,
+            "n_evaluated_customers": 2663
+          },
+          "B2_vs_B1": {
+            "mean_a": 0.02457355721336999,
+            "mean_b": 0.023442602934795324,
+            "mean_diff": -0.0011309542785746672,
+            "ci_lower": -0.0033132077139311415,
+            "ci_upper": 0.0010636425523309592,
+            "p_value_two_sided": 0.3,
+            "statistically_significant": false,
+            "n_evaluated_customers": 2663
+          },
+          "B2_vs_B0": {
+            "mean_a": 0.022497658507098436,
+            "mean_b": 0.023442602934795324,
+            "mean_diff": 0.0009449444276968892,
+            "ci_lower": -0.0014029986866808813,
+            "ci_upper": 0.0035252158447464125,
+            "p_value_two_sided": 0.452,
+            "statistically_significant": false,
+            "n_evaluated_customers": 2663
+          }
+        }
+      },
+      "W4": {
+        "cutoff_date": "2020-09-08",
+        "train_windows": [
+          "W1",
+          "W2",
+          "W3"
+        ],
+        "oracle_curve": {
+          "K=50": {
+            "oracle_map12": 0.08516734447585511,
+            "recall_at_pool": 0.08490434133439279,
+            "avg_pool_size": 50.0
+          },
+          "K=100": {
+            "oracle_map12": 0.10995713801564866,
+            "recall_at_pool": 0.10951951814007313,
+            "avg_pool_size": 100.0
+          },
+          "K=200": {
+            "oracle_map12": 0.15262425222531606,
+            "recall_at_pool": 0.15189781147437798,
+            "avg_pool_size": 200.0
+          }
+        },
+        "models": {
+          "B0_rule": {
+            "map12": 0.025274848368028457,
+            "evaluated_customers": 2444,
+            "all_customer_map12": 0.0030885864705730774,
+            "oracle_map12": 0.10995713801564866,
+            "recall_at_pool": 0.10951951814007313,
+            "oracle_utilization": 0.22986091511795662,
+            "oracle_upper_bound_satisfied": true,
+            "repeat_explore": {
+              "map12_total": 0.025274848368028457,
+              "map12_repeat": 0.021747701380901735,
+              "map12_explore": 0.0035271469871267238,
+              "repeat_label_count": 213,
+              "explore_label_count": 7363,
+              "total_label_count": 7576
+            },
+            "strata": {
+              "S0": {
+                "map12": 0.01898115919023657,
+                "all_customer_map12": 0.002042885807497261,
+                "map12_repeat": 0.012905760327635327,
+                "map12_explore": 0.006075398862601243,
+                "evaluated_customers": 1040,
+                "total_stratum_customers": 9663
+              },
+              "S1": {
+                "map12": 0.03157330788944546,
+                "all_customer_map12": 0.003198335084904864,
+                "map12_repeat": 0.029079061982501136,
+                "map12_explore": 0.002494245906944319,
+                "evaluated_customers": 819,
+                "total_stratum_customers": 8085
+              },
+              "S2": {
+                "map12": 0.027645785798563575,
+                "all_customer_map12": 0.007181520733641071,
+                "map12_repeat": 0.027202802855580636,
+                "map12_explore": 0.00044298294298294295,
+                "evaluated_customers": 585,
+                "total_stratum_customers": 2252
+              }
+            }
+          },
+          "B1_strong_lgbm": {
+            "map12": 0.025173180269906458,
+            "evaluated_customers": 2444,
+            "all_customer_map12": 0.003076162628982569,
+            "oracle_map12": 0.10995713801564866,
+            "recall_at_pool": 0.10951951814007313,
+            "oracle_utilization": 0.2289362993998981,
+            "oracle_upper_bound_satisfied": true,
+            "repeat_explore": {
+              "map12_total": 0.025173180269906458,
+              "map12_repeat": 0.01861943419820826,
+              "map12_explore": 0.006553746071698199,
+              "repeat_label_count": 213,
+              "explore_label_count": 7363,
+              "total_label_count": 7576
+            },
+            "strata": {
+              "S0": {
+                "map12": 0.01803883067164317,
+                "all_customer_map12": 0.0019414657868683533,
+                "map12_repeat": 0.010300544363044364,
+                "map12_explore": 0.007738286308598808,
+                "evaluated_customers": 1040,
+                "total_stratum_customers": 9663
+              },
+              "S1": {
+                "map12": 0.0328636576463485,
+                "all_customer_map12": 0.0033290458395002376,
+                "map12_repeat": 0.02608083141907783,
+                "map12_explore": 0.0067828262272706715,
+                "evaluated_customers": 819,
+                "total_stratum_customers": 8085
+              },
+              "S2": {
+                "map12": 0.027089800117577896,
+                "all_customer_map12": 0.0070370928369374195,
+                "map12_repeat": 0.022962615573726683,
+                "map12_explore": 0.0041271845438512105,
+                "evaluated_customers": 585,
+                "total_stratum_customers": 2252
+              }
+            }
+          },
+          "B2_lgbm_svd_emb": {
+            "map12": 0.024985103841803438,
+            "evaluated_customers": 2444,
+            "all_customer_map12": 0.00305317968946838,
+            "oracle_map12": 0.10995713801564866,
+            "recall_at_pool": 0.10951951814007313,
+            "oracle_utilization": 0.2272258472046413,
+            "oracle_upper_bound_satisfied": true,
+            "repeat_explore": {
+              "map12_total": 0.024985103841803438,
+              "map12_repeat": 0.018106153188156737,
+              "map12_explore": 0.006878950653646703,
+              "repeat_label_count": 213,
+              "explore_label_count": 7363,
+              "total_label_count": 7576
+            },
+            "strata": {
+              "S0": {
+                "map12": 0.01705432984674056,
+                "all_customer_map12": 0.0018355068861233758,
+                "map12_repeat": 0.009803622303622304,
+                "map12_explore": 0.007250707543118257,
+                "evaluated_customers": 1040,
+                "total_stratum_customers": 9663
+              },
+              "S1": {
+                "map12": 0.03398426186785975,
+                "all_customer_map12": 0.0034425615918091696,
+                "map12_repeat": 0.025386532436796987,
+                "map12_explore": 0.008597729431062764,
+                "evaluated_customers": 819,
+                "total_stratum_customers": 8085
+              },
+              "S2": {
+                "map12": 0.02648543637432526,
+                "all_customer_map12": 0.006880097814822504,
+                "map12_repeat": 0.02267367714589937,
+                "map12_explore": 0.003811759228425895,
+                "evaluated_customers": 585,
+                "total_stratum_customers": 2252
+              }
+            }
+          }
+        },
+        "paired_bootstrap_ci": {
+          "B1_vs_B0": {
+            "mean_a": 0.025274848368028457,
+            "mean_b": 0.025173180269906458,
+            "mean_diff": -0.0001016680981219991,
+            "ci_lower": -0.0028347704248041445,
+            "ci_upper": 0.0026721007272868975,
+            "p_value_two_sided": 0.98,
+            "statistically_significant": false,
+            "n_evaluated_customers": 2444
+          },
+          "B2_vs_B1": {
+            "mean_a": 0.025173180269906458,
+            "mean_b": 0.024985103841803438,
+            "mean_diff": -0.00018807642810302386,
+            "ci_lower": -0.0024247360815441168,
+            "ci_upper": 0.0019648107568652783,
+            "p_value_two_sided": 0.836,
+            "statistically_significant": false,
+            "n_evaluated_customers": 2444
+          },
+          "B2_vs_B0": {
+            "mean_a": 0.025274848368028457,
+            "mean_b": 0.024985103841803438,
+            "mean_diff": -0.00028974452622502296,
+            "ci_lower": -0.003158737598802189,
+            "ci_upper": 0.0026863121354200685,
+            "p_value_two_sided": 0.852,
+            "statistically_significant": false,
+            "n_evaluated_customers": 2444
+          }
+        }
+      }
+    },
+    "summary_mean": {
+      "B0_rule": {
+        "mean_map12": 0.02305437046369528,
+        "mean_map12_repeat": 0.01961014899527706,
+        "mean_map12_explore": 0.0034442214684182264,
+        "mean_oracle_utilization": 0.2122948933120978,
+        "strata_mean_map12": {
+          "S0": 0.01638899385235663,
+          "S1": 0.028273789823792587,
+          "S2": 0.029817209988805927
+        }
+      },
+      "B1_strong_lgbm": {
+        "mean_map12": 0.02407387159660503,
+        "mean_map12_repeat": 0.017423364612353196,
+        "mean_map12_explore": 0.006650506984251831,
+        "mean_oracle_utilization": 0.22158224825413889,
+        "strata_mean_map12": {
+          "S0": 0.017073313933712017,
+          "S1": 0.03016281217857796,
+          "S2": 0.030099526498351365
+        }
+      },
+      "B2_lgbm_svd_emb": {
+        "mean_map12": 0.02285004533081483,
+        "mean_map12_repeat": 0.01631574973177354,
+        "mean_map12_explore": 0.006534295599041289,
+        "mean_oracle_utilization": 0.20999425732466423,
+        "strata_mean_map12": {
+          "S0": 0.015572989873450327,
+          "S1": 0.02953272954894352,
+          "S2": 0.028458481407820754
+        }
+      }
+    }
+  },
+  "feature_importance_w4": {
+    "B1_top15": [
+      {
+        "feature": "score_time_decay",
+        "gain": 8977.474209070206,
+        "split": 22
+      },
+      {
+        "feature": "time_decay_score",
+        "gain": 5305.805000066757,
+        "split": 53
+      },
+      {
+        "feature": "item_pop_7d_count",
+        "gain": 4528.477157354355,
+        "split": 159
+      },
+      {
+        "feature": "item_pop_28d_count",
+        "gain": 4356.617512822151,
+        "split": 294
+      },
+      {
+        "feature": "item_value_mean",
+        "gain": 4348.763370037079,
+        "split": 496
+      },
+      {
+        "feature": "item_pop_trend_7_28",
+        "gain": 3826.863311767578,
+        "split": 297
+      },
+      {
+        "feature": "cust_value_mean",
+        "gain": 3670.783899784088,
+        "split": 431
+      },
+      {
+        "feature": "pair_days_since_last",
+        "gain": 3220.2440996170044,
+        "split": 51
+      },
+      {
+        "feature": "cust_value_sum",
+        "gain": 3039.9154999256134,
+        "split": 381
+      },
+      {
+        "feature": "cust_days_tenure",
+        "gain": 2897.005573272705,
+        "split": 369
+      },
+      {
+        "feature": "rank_item_cooc",
+        "gain": 2830.1599164009094,
+        "split": 207
+      },
+      {
+        "feature": "cust_days_since_last",
+        "gain": 2680.804972410202,
+        "split": 332
+      },
+      {
+        "feature": "cust_avg_basket_size",
+        "gain": 2447.9414489269257,
+        "split": 332
+      },
+      {
+        "feature": "cooccur_max_score",
+        "gain": 2091.101484775543,
+        "split": 259
+      },
+      {
+        "feature": "cooccur_score",
+        "gain": 2063.99471950531,
+        "split": 198
+      }
+    ],
+    "B2_top15": [
+      {
+        "feature": "time_decay_score",
+        "gain": 11414.893746614456,
+        "split": 35
+      },
+      {
+        "feature": "item_pop_7d_count",
+        "gain": 4654.638376712799,
+        "split": 111
+      },
+      {
+        "feature": "pair_days_since_last",
+        "gain": 3556.4577808380127,
+        "split": 57
+      },
+      {
+        "feature": "item_value_mean",
+        "gain": 3532.53199839592,
+        "split": 300
+      },
+      {
+        "feature": "item_pop_28d_count",
+        "gain": 3522.0062975883484,
+        "split": 192
+      },
+      {
+        "feature": "item_pop_trend_7_28",
+        "gain": 2976.8662109375,
+        "split": 203
+      },
+      {
+        "feature": "cust_value_mean",
+        "gain": 2871.2688982486725,
+        "split": 286
+      },
+      {
+        "feature": "svd_prod_3",
+        "gain": 2849.9165995121,
+        "split": 309
+      },
+      {
+        "feature": "svd_prod_2",
+        "gain": 2779.4697246551514,
+        "split": 320
+      },
+      {
+        "feature": "svd_prod_1",
+        "gain": 2431.6535019874573,
+        "split": 278
+      },
+      {
+        "feature": "svd_dot",
+        "gain": 2424.7975075244904,
+        "split": 247
+      },
+      {
+        "feature": "svd_prod_0",
+        "gain": 2386.5838465690613,
+        "split": 244
+      },
+      {
+        "feature": "svd_user_norm",
+        "gain": 2316.182105064392,
+        "split": 265
+      },
+      {
+        "feature": "score_time_decay",
+        "gain": 2214.731096982956,
+        "split": 9
+      },
+      {
+        "feature": "cust_days_tenure",
+        "gain": 2211.433842420578,
+        "split": 242
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "experiment": "hm_subgroup_history_length_audit",
+  "note": "post-hoc subgroup analysis of decisive experiment per-customer APs; sequence unit = item event; nominal significance only, 40 contrasts not corrected",
+  "history_distribution": {
+    "customers_with_history": 39261,
+    "median_events": 6.0,
+    "p99": 62,
+    "gt50": 697,
+    "gt200": 5,
+    "S2_gt50": 630,
+    "S2_gt200": 5
+  },
+  "paired_vs_mean_pool": {
+    "L50": {
+      "gt100_gru": {
+        "n": 34,
+        "diff": 0.028,
+        "ci": [
+          0.0056,
+          0.0549
+        ],
+        "p": 0.003
+      },
+      "gt100_sasrec": {
+        "n": 34,
+        "diff": 0.0112,
+        "ci": [
+          -0.003,
+          0.0338
+        ],
+        "p": 0.237
+      },
+      "gt100_hstu_aligned": {
+        "n": 34,
+        "diff": -0.0106,
+        "ci": [
+          -0.0352,
+          0.0124
+        ],
+        "p": 0.365
+      }
+    },
+    "L200": {
+      "gt100_gru": {
+        "n": 34,
+        "diff": 0.0288,
+        "ci": [
+          0.0027,
+          0.0604
+        ],
+        "p": 0.003
+      },
+      "gt100_sasrec": {
+        "n": 34,
+        "diff": 0.0542,
+        "ci": [
+          0.0088,
+          0.1182
+        ],
+        "p": 0.002
+      },
+      "gt100_hstu_aligned": {
+        "n": 34,
+        "diff": -0.011,
+        "ci": [
+          -0.0261,
+          0.001
+        ],
+        "p": 0.09
+      }
+    }
+  }
+}

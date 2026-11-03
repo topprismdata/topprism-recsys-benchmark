@@ -1,0 +1,65 @@
+{
+  "A2-M1": {
+    "all": 0.1747,
+    "new": 0.0014,
+    "rep": 0.3935
+  },
+  "A2-M3": {
+    "all": 0.1915,
+    "new": 0.005,
+    "rep": 0.4269
+  },
+  "A3-M1": {
+    "all": 0.1772,
+    "new": 0.0011,
+    "rep": 0.3996
+  },
+  "A3-M3": {
+    "all": 0.1928,
+    "new": 0.0051,
+    "rep": 0.4296
+  },
+  "freq_baseline": {
+    "all": 0.0,
+    "new": 0.0,
+    "rep": 0.4374
+  },
+  "paired": {
+    "cand_increment_A3M1_vs_A2M1": {
+      "mean_diff": 0.0025,
+      "ci95": [
+        -0.0008,
+        0.0058
+      ]
+    },
+    "feature_increment_A2M3_vs_A2M1": {
+      "mean_diff": 0.01675,
+      "ci95": [
+        0.0128,
+        0.02095
+      ]
+    },
+    "full_system_A3M3_vs_A2M1": {
+      "mean_diff": 0.018,
+      "ci95": [
+        0.0137,
+        0.0224
+      ]
+    },
+    "A3M3_vs_freq": {
+      "mean_diff": -0.0006,
+      "ci95": [
+        -0.00475,
+        0.0036
+      ]
+    }
+  },
+  "interaction": {
+    "a3_feat_gain": 0.0156,
+    "a2_feat_gain": 0.0168
+  },
+  "protocol": {
+    "seed": 42,
+    "seconds": 12964.1
+  }
+}

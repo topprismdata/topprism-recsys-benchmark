@@ -1,0 +1,6 @@
+[data] 5-core: users=6040 items=3416 events=999611 dates=2000-04-25..2003-02-28
+[mean_pool] HR@10=0.0270 HR@50=0.1276 NDCG@10=0.0113 (15s)
+[gru] HR@10=0.0488 HR@50=0.1492 NDCG@10=0.0230 (16s)
+[sasrec] HR@10=0.0386 HR@50=0.1306 NDCG@10=0.0178 (22s)
+[hstu_aligned] HR@10=0.0172 HR@50=0.0909 NDCG@10=0.0077 (20s)
+DONE in 77.1s

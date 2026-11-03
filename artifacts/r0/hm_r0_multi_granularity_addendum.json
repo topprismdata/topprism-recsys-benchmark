@@ -1,0 +1,66 @@
+{
+  "fingerprints": {
+    "hm_transactions_raw_sha256": "74053a941a894cc5ec09583ea3e551b68f1e231b679d3b33f82ba082e6fa0f8b",
+    "hm_articles_raw_sha256": "6d76cc999a0a30561ca9dda7aad9dc46b363d665417138d33f6f801e2422609d",
+    "swire_canonical_events_sha256": "7c00b911e6ae560fe5695ed29ec7625a765acdd37102e6cf1b8f46d222623fd2",
+    "w5_post_cutoff_rows_excluded_count": 240311,
+    "sealed_cutoff": "2020-09-15",
+    "sealed_w5_labels_touched": false
+  },
+  "hm_w4_multi_granularity_repeat": {
+    "article_id_exact_sku": {
+      "repeat_pairs": 8955,
+      "total_pairs": 227910,
+      "repeat_share": 0.03929182572067921,
+      "explore_share": 0.9607081742793208
+    },
+    "product_code_style_family": {
+      "repeat_pairs": 17372,
+      "total_pairs": 209746,
+      "repeat_share": 0.0828239871082166,
+      "explore_share": 0.9171760128917834
+    },
+    "product_type_no_category": {
+      "repeat_pairs": 100914,
+      "total_pairs": 162807,
+      "repeat_share": 0.6198382133446351,
+      "explore_share": 0.38016178665536493
+    }
+  },
+  "hm_w4_scored_customer_strata": {
+    "N_all_catalog_customers": 1371980,
+    "N_purchasing_scored_w4": 72019,
+    "N_scored_by_stratum": {
+      "S0_0_to_1_baskets": {
+        "count": 8923,
+        "share_of_scored": 0.12389786028686875
+      },
+      "S1_2_to_4_baskets": {
+        "count": 9063,
+        "share_of_scored": 0.12584179174939947
+      },
+      "S2_ge_5_baskets": {
+        "count": 54033,
+        "share_of_scored": 0.7502603479637318
+      }
+    }
+  },
+  "jaccard_window_date_ranges_verified_pre_w5": [
+    {
+      "pair": "PreW1_7d (2020-08-12..08-18) vs PreW2_7d (2020-08-19..08-25)",
+      "jaccard": 0.26582278481012656
+    },
+    {
+      "pair": "PreW2_7d (2020-08-19..08-25) vs PreW3_7d (2020-08-26..09-01)",
+      "jaccard": 0.3698630136986301
+    },
+    {
+      "pair": "PreW3_7d (2020-08-26..09-01) vs PreW4_7d (2020-09-02..09-08)",
+      "jaccard": 0.43884892086330934
+    },
+    {
+      "pair": "PreW4_7d (2020-09-02..09-08) vs PreW5_7d (2020-09-09..09-15, strictly <= W5 cutoff)",
+      "jaccard": 0.36054421768707484
+    }
+  ]
+}

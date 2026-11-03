@@ -1,0 +1,31 @@
+{
+  "contract_version": "0.9",
+  "frozen_date": "2026-10-25",
+  "random_seed": 42,
+  "horizon_days": 7,
+  "k_top": 12,
+  "strata_thresholds": {
+    "S0_max_baskets": 1,
+    "S1_max_baskets": 4,
+    "S2_min_baskets": 5
+  },
+  "sample_tiers": {
+    "smoke_customers": 20000,
+    "dev_customers": 100000
+  },
+  "hm_windows": {
+    "W1": {"cutoff": "2020-08-18", "start": "2020-08-19", "end": "2020-08-25", "role": "validation"},
+    "W2": {"cutoff": "2020-08-25", "start": "2020-08-26", "end": "2020-09-01", "role": "validation"},
+    "W3": {"cutoff": "2020-09-01", "start": "2020-09-02", "end": "2020-09-08", "role": "validation"},
+    "W4": {"cutoff": "2020-09-08", "start": "2020-09-09", "end": "2020-09-15", "role": "validation"},
+    "W5": {"cutoff": "2020-09-15", "start": "2020-09-16", "end": "2020-09-22", "role": "sealed_test"}
+  },
+  "r2_orthogonal_matrix": {
+    "num_negatives": 256,
+    "embedding_dim": 128,
+    "max_seq_len": 50,
+    "losses": ["bce_256", "sampled_softmax_256"],
+    "historical_anchor": "sasrec_bce_1",
+    "encoders": ["gru", "sasrec", "ligr_sasrec", "hstu_math"]
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "protocol": {
+    "fusion": "RRF k=60",
+    "top": 500,
+    "ks": [
+      100,
+      300,
+      500
+    ],
+    "arms": {
+      "A2": [
+        "FREQ",
+        "RECENCY",
+        "POPULAR",
+        "ITEM_CF",
+        "SVD"
+      ],
+      "A3": [
+        "FREQ",
+        "RECENCY",
+        "POPULAR",
+        "ITEM_CF",
+        "SVD",
+        "SASREC"
+      ],
+      "NEGCTRL": [
+        "FREQ",
+        "RECENCY",
+        "POPULAR",
+        "ITEM_CF",
+        "SVD",
+        "SVD_DUP"
+      ]
+    },
+    "sasrec_source": "v4 full-catalog val-selected",
+    "seed": 42
+  },
+  "n": {
+    "all": 20000,
+    "rep": 8841,
+    "new": 11159
+  },
+  "L2_fusion": {
+    "A2": {
+      "100": {
+        "all": 0.456,
+        "new": 0.1208,
+        "rep": 0.879
+      },
+      "300": {
+        "all": 0.5846,
+        "new": 0.2601,
+        "rep": 0.994
+      },
+      "500": {
+        "all": 0.6355,
+        "new": 0.3471,
+        "rep": 0.9997
+      }
+    },
+    "A3": {
+      "100": {
+        "all": 0.4538,
+        "new": 0.143,
+        "rep": 0.8461
+      },
+      "300": {
+        "all": 0.6044,
+        "new": 0.2975,
+        "rep": 0.9917
+      },
+      "500": {
+        "all": 0.6619,
+        "new": 0.3943,
+        "rep": 0.9995
+      }
+    },
+    "NEGCTRL": {
+      "100": {
+        "all": 0.4267,
+        "new": 0.1308,
+        "rep": 0.8001
+      },
+      "300": {
+        "all": 0.5897,
+        "new": 0.2743,
+        "rep": 0.9877
+      },
+      "500": {
+        "all": 0.6447,
+        "new": 0.3638,
+        "rep": 0.9992
+      }
+    }
+  },
+  "L3_marginal": {
+    "A3_vs_A2": {
+      "100": {
+        "gained": {
+          "new": 275,
+          "rep": 95,
+          "all": 370
+        },
+        "lost": {
+          "new": 27,
+          "rep": 386,
+          "all": 413
+        },
+        "net": {
+          "new": 248,
+          "rep": -291,
+          "total": -43
+        }
+      },
+      "300": {
+        "gained": {
+          "new": 485,
+          "rep": 10,
+          "all": 495
+        },
+        "lost": {
+          "new": 68,
+          "rep": 30,
+          "all": 98
+        },
+        "net": {
+          "new": 417,
+          "rep": -20,
+          "total": 397
+        }
+      },
+      "500": {
+        "gained": {
+          "new": 600,
+          "rep": 1,
+          "all": 601
+        },
+        "lost": {
+          "new": 73,
+          "rep": 2,
+          "all": 75
+        },
+        "net": {
+          "new": 527,
+          "rep": -1,
+          "total": 526
+        }
+      }
+    },
+    "NEGCTRL_vs_A2": {
+      "100": {
+        "gained": {
+          "new": 244,
+          "rep": 8,
+          "all": 252
+        },
+        "lost": {
+          "new": 132,
+          "rep": 705,
+          "all": 837
+        },
+        "net": {
+          "new": 112,
+          "rep": -697,
+          "total": -585
+        }
+      },
+      "300": {
+        "gained": {
+          "new": 251,
+          "rep": 0,
+          "all": 251
+        },
+        "lost": {
+          "new": 93,
+          "rep": 56,
+          "all": 149
+        },
+        "net": {
+          "new": 158,
+          "rep": -56,
+          "total": 102
+        }
+      },
+      "500": {
+        "gained": {
+          "new": 314,
+          "rep": 0,
+          "all": 314
+        },
+        "lost": {
+          "new": 127,
+          "rep": 4,
+          "all": 131
+        },
+        "net": {
+          "new": 187,
+          "rep": -4,
+          "total": 183
+        }
+      }
+    }
+  },
+  "SASREC_capability": {
+    "unique_new_targets": 836,
+    "frac_of_all_new": 0.0749,
+    "frac_of_five_source_uncovered_new": 0.1381,
+    "standalone_recall": {
+      "100": {
+        "new": 0.1964,
+        "rep": 0.6468
+      },
+      "300": {
+        "new": 0.3507,
+        "rep": 0.8157
+      },
+      "500": {
+        "new": 0.4404,
+        "rep": 0.8758
+      }
+    },
+    "target_overlap_with_sources": {
+      "FREQ": 7743,
+      "RECENCY": 7743,
+      "POPULAR": 6660,
+      "ITEM_CF": 7691,
+      "SVD": 8475
+    }
+  },
+  "six_source_union_new_coverage": 0.5324,
+  "five_source_union_new_coverage_reference": 0.4575,
+  "seconds": 2873.6
+}

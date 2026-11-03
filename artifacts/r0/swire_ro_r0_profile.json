@@ -1,0 +1,256 @@
+{
+  "validation_cutoffs": [
+    "2026-06-15",
+    "2026-06-22",
+    "2026-06-29",
+    "2026-07-06"
+  ],
+  "sealed_cutoff": "2026-07-13",
+  "horizon_days": 7,
+  "p1_sequence_length": {
+    "total_events": 1967918,
+    "total_customers": 11873,
+    "purchase_row_counts": {
+      "p50": 134.0,
+      "p90": 346.0,
+      "p99": 732.2800000000007,
+      "mean": 165.74732586540892,
+      "max": 2473.0
+    },
+    "daily_basket_counts": {
+      "p50": 10.0,
+      "p90": 23.0,
+      "p99": 44.0,
+      "mean": 11.609028889076056,
+      "max": 102.0
+    },
+    "strata_counts": {
+      "S0": 809,
+      "S1": 1861,
+      "S2": 9203
+    },
+    "strata_shares": {
+      "S0": 0.06813779162806367,
+      "S1": 0.15674218815800556,
+      "S2": 0.7751200202139308
+    }
+  },
+  "p2_item_sparsity": {
+    "total_distinct_articles": 345,
+    "item_purchase_counts": {
+      "p50": 1445.0,
+      "p90": 16600.6,
+      "p99": 44985.04000000001,
+      "mean": 5704.110144927537,
+      "max": 60531.0
+    },
+    "single_purchase_item_count": 7,
+    "single_purchase_item_share": 0.020289855072463767
+  },
+  "p3_repeat_vs_exploration": {
+    "per_window": {
+      "W1": {
+        "cutoff_date": "2026-06-15",
+        "evaluated_customers": 4461,
+        "repeat_label_count": 60679,
+        "explore_label_count": 7908,
+        "total_label_count": 68587,
+        "repeat_label_share": 0.884701182439821,
+        "explore_label_share": 0.11529881756017904,
+        "customers_with_repeat": 4308,
+        "customers_with_explore": 2413,
+        "repeat_only_customers": 2048,
+        "explore_only_customers": 153,
+        "mixed_customers": 2260
+      },
+      "W2": {
+        "cutoff_date": "2026-06-22",
+        "evaluated_customers": 4947,
+        "repeat_label_count": 65532,
+        "explore_label_count": 8615,
+        "total_label_count": 74147,
+        "repeat_label_share": 0.8838118871970545,
+        "explore_label_share": 0.1161881128029455,
+        "customers_with_repeat": 4768,
+        "customers_with_explore": 2743,
+        "repeat_only_customers": 2204,
+        "explore_only_customers": 179,
+        "mixed_customers": 2564
+      },
+      "W3": {
+        "cutoff_date": "2026-06-29",
+        "evaluated_customers": 4363,
+        "repeat_label_count": 62863,
+        "explore_label_count": 7579,
+        "total_label_count": 70442,
+        "repeat_label_share": 0.8924079384458136,
+        "explore_label_share": 0.10759206155418642,
+        "customers_with_repeat": 4227,
+        "customers_with_explore": 2351,
+        "repeat_only_customers": 2012,
+        "explore_only_customers": 136,
+        "mixed_customers": 2215
+      },
+      "W4": {
+        "cutoff_date": "2026-07-06",
+        "evaluated_customers": 4605,
+        "repeat_label_count": 70571,
+        "explore_label_count": 10589,
+        "total_label_count": 81160,
+        "repeat_label_share": 0.8695293247905372,
+        "explore_label_share": 0.1304706752094628,
+        "customers_with_repeat": 4470,
+        "customers_with_explore": 3014,
+        "repeat_only_customers": 1591,
+        "explore_only_customers": 135,
+        "mixed_customers": 2879
+      }
+    },
+    "total_repeat_labels": 259645,
+    "total_explore_labels": 34691,
+    "overall_repeat_label_share": 0.8821381006740596,
+    "overall_explore_label_share": 0.11786189932594042,
+    "mean_window_repeat_share": 0.8826125832183065,
+    "mean_window_explore_share": 0.11738741678169343
+  },
+  "p4_historical_oracle_coverage": {
+    "per_window": {
+      "W1": {
+        "cutoff_date": "2026-06-15",
+        "evaluated_customers": 4461,
+        "historical_pair_coverage": 0.884701182439821,
+        "historical_user_recall": 0.8694025470433868,
+        "historical_oracle_map12": 0.9060503924828067,
+        "top100_popular_pair_coverage": 0.8815081575225626,
+        "top100_popular_user_recall": 0.8756449972258145,
+        "top100_popular_oracle_map12": 0.9284230365266007,
+        "combined_pair_coverage": 0.9730706985288757,
+        "combined_user_recall": 0.971674198564765,
+        "combined_oracle_map12": 0.9840128880310455,
+        "popularity_top12_map12": 0.24708418892362033
+      },
+      "W2": {
+        "cutoff_date": "2026-06-22",
+        "evaluated_customers": 4947,
+        "historical_pair_coverage": 0.8838118871970545,
+        "historical_user_recall": 0.860718861555657,
+        "historical_oracle_map12": 0.9005879931895698,
+        "top100_popular_pair_coverage": 0.8778372692084643,
+        "top100_popular_user_recall": 0.8740985456233202,
+        "top100_popular_oracle_map12": 0.9279679100631194,
+        "combined_pair_coverage": 0.9679690344855489,
+        "combined_user_recall": 0.9636383601360358,
+        "combined_oracle_map12": 0.9781030948253508,
+        "popularity_top12_map12": 0.2646477623446136
+      },
+      "W3": {
+        "cutoff_date": "2026-06-29",
+        "evaluated_customers": 4363,
+        "historical_pair_coverage": 0.8924079384458136,
+        "historical_user_recall": 0.8773474240891224,
+        "historical_oracle_map12": 0.915024231377658,
+        "top100_popular_pair_coverage": 0.882428096874024,
+        "top100_popular_user_recall": 0.877970211503444,
+        "top100_popular_oracle_map12": 0.9339409202863247,
+        "combined_pair_coverage": 0.9647227506317254,
+        "combined_user_recall": 0.961199580129892,
+        "combined_oracle_map12": 0.9781242816826131,
+        "popularity_top12_map12": 0.286898947462761
+      },
+      "W4": {
+        "cutoff_date": "2026-07-06",
+        "evaluated_customers": 4605,
+        "historical_pair_coverage": 0.8695293247905372,
+        "historical_user_recall": 0.8516353125292456,
+        "historical_oracle_map12": 0.9072650265647008,
+        "top100_popular_pair_coverage": 0.8585510103499261,
+        "top100_popular_user_recall": 0.8529770434357563,
+        "top100_popular_oracle_map12": 0.9278936409229567,
+        "combined_pair_coverage": 0.9438146870379497,
+        "combined_user_recall": 0.9393815500217985,
+        "combined_oracle_map12": 0.970777528660265,
+        "popularity_top12_map12": 0.3021921257272419
+      }
+    },
+    "mean_historical_pair_coverage": 0.8826125832183065,
+    "mean_historical_oracle_map12": 0.9072319109036838,
+    "mean_top100_popular_pair_coverage": 0.8750811334887443,
+    "mean_top100_popular_oracle_map12": 0.9295563769497504,
+    "mean_combined_pair_coverage": 0.9623942926710249,
+    "mean_combined_oracle_map12": 0.9777544482998186
+  },
+  "p5_window_drift": {
+    "per_window_precutoff": {
+      "W1": {
+        "cutoff_date": "2026-06-15",
+        "recent_window_start_exclusive": "2026-06-08",
+        "recent_active_customers": 4992,
+        "recent_active_articles": 274,
+        "recent_event_count": 82635,
+        "cumulative_active_customers": 11576,
+        "cumulative_active_articles": 332,
+        "cumulative_event_count": 1665211
+      },
+      "W2": {
+        "cutoff_date": "2026-06-22",
+        "recent_window_start_exclusive": "2026-06-15",
+        "recent_active_customers": 4461,
+        "recent_active_articles": 272,
+        "recent_event_count": 70462,
+        "cumulative_active_customers": 11659,
+        "cumulative_active_articles": 340,
+        "cumulative_event_count": 1735673
+      },
+      "W3": {
+        "cutoff_date": "2026-06-29",
+        "recent_window_start_exclusive": "2026-06-22",
+        "recent_active_customers": 4947,
+        "recent_active_articles": 279,
+        "recent_event_count": 76574,
+        "cumulative_active_customers": 11741,
+        "cumulative_active_articles": 341,
+        "cumulative_event_count": 1812247
+      },
+      "W4": {
+        "cutoff_date": "2026-07-06",
+        "recent_window_start_exclusive": "2026-06-29",
+        "recent_active_customers": 4363,
+        "recent_active_articles": 279,
+        "recent_event_count": 72301,
+        "cumulative_active_customers": 11809,
+        "cumulative_active_articles": 343,
+        "cumulative_event_count": 1884548
+      },
+      "W5_sealed_precutoff": {
+        "cutoff_date": "2026-07-13",
+        "recent_window_start_exclusive": "2026-07-06",
+        "recent_active_customers": 4605,
+        "recent_active_articles": 279,
+        "recent_event_count": 83370,
+        "cumulative_active_customers": 11873,
+        "cumulative_active_articles": 345,
+        "cumulative_event_count": 1967918
+      }
+    },
+    "consecutive_recent_top100_jaccard": {
+      "W1_to_W2": 0.9047619047619048,
+      "W2_to_W3": 0.8867924528301887,
+      "W3_to_W4": 0.8691588785046729,
+      "W4_to_W5_sealed_precutoff": 0.9047619047619048
+    },
+    "consecutive_cumulative_top100_jaccard": {
+      "W1_to_W2": 1.0,
+      "W2_to_W3": 0.9801980198019802,
+      "W3_to_W4": 0.9801980198019802,
+      "W4_to_W5_sealed_precutoff": 1.0
+    },
+    "mean_recent_top100_jaccard": 0.8913687852146678
+  },
+  "sealed_w5_labels_touched": false,
+  "dataset": "swire_ro",
+  "source_csv": "C:/Users/ghb/ZCodeProject/swire_ro/26年订单.csv",
+  "cache_parquet": "data/swire_events.parquet",
+  "min_event_date": "2026-01-02",
+  "max_event_date": "2026-07-20",
+  "canonical_row_count_total": 2025970
+}

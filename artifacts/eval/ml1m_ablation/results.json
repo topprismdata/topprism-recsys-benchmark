@@ -1,0 +1,170 @@
+{
+  "sasrec_full_s42": {
+    "hr10": 0.2271523178807947,
+    "ndcg10": 0.1227048933506012,
+    "best_val_hr10": 0.3513,
+    "epochs_run": 100,
+    "seconds": 158.3
+  },
+  "sasrec_uniform_s42": {
+    "hr10": 0.02019867549668874,
+    "ndcg10": 0.00984716136008501,
+    "best_val_hr10": 0.023,
+    "epochs_run": 100,
+    "seconds": 104.7
+  },
+  "sasrec_pos_only_s42": {
+    "hr10": 0.02019867549668874,
+    "ndcg10": 0.00984716136008501,
+    "best_val_hr10": 0.023,
+    "epochs_run": 100,
+    "seconds": 157.5
+  },
+  "mean_pool_s42": {
+    "hr10": 0.08245033112582781,
+    "ndcg10": 0.04475650563836098,
+    "best_val_hr10": 0.1276,
+    "epochs_run": 100,
+    "seconds": 45.5
+  },
+  "sasrec_full_s43": {
+    "hr10": 0.2347682119205298,
+    "ndcg10": 0.12775729596614838,
+    "best_val_hr10": 0.3402,
+    "epochs_run": 100,
+    "seconds": 157.8
+  },
+  "sasrec_uniform_s43": {
+    "hr10": 0.021688741721854303,
+    "ndcg10": 0.01034590881317854,
+    "best_val_hr10": 0.0238,
+    "epochs_run": 65,
+    "seconds": 68.1
+  },
+  "sasrec_pos_only_s43": {
+    "hr10": 0.2144039735099338,
+    "ndcg10": 0.1195741593837738,
+    "best_val_hr10": 0.3033,
+    "epochs_run": 100,
+    "seconds": 157.7
+  },
+  "mean_pool_s43": {
+    "hr10": 0.0847682119205298,
+    "ndcg10": 0.04386276379227638,
+    "best_val_hr10": 0.1252,
+    "epochs_run": 100,
+    "seconds": 45.4
+  },
+  "sasrec_full_s44": {
+    "hr10": 0.2336092715231788,
+    "ndcg10": 0.1256307065486908,
+    "best_val_hr10": 0.357,
+    "epochs_run": 100,
+    "seconds": 157.8
+  },
+  "sasrec_uniform_s44": {
+    "hr10": 0.2021523178807947,
+    "ndcg10": 0.10850507020950317,
+    "best_val_hr10": 0.2856,
+    "epochs_run": 100,
+    "seconds": 104.6
+  },
+  "sasrec_pos_only_s44": {
+    "hr10": 0.22235099337748343,
+    "ndcg10": 0.12336535006761551,
+    "best_val_hr10": 0.3187,
+    "epochs_run": 100,
+    "seconds": 157.7
+  },
+  "mean_pool_s44": {
+    "hr10": 0.08195364238410596,
+    "ndcg10": 0.04246163368225098,
+    "best_val_hr10": 0.1247,
+    "epochs_run": 100,
+    "seconds": 45.6
+  },
+  "sasrec_full_s45": {
+    "hr10": 0.22665562913907283,
+    "ndcg10": 0.12301970273256302,
+    "best_val_hr10": 0.3472,
+    "epochs_run": 100,
+    "seconds": 157.6
+  },
+  "sasrec_uniform_s45": {
+    "hr10": 0.02019867549668874,
+    "ndcg10": 0.009821414016187191,
+    "best_val_hr10": 0.023,
+    "epochs_run": 70,
+    "seconds": 73.3
+  },
+  "sasrec_pos_only_s45": {
+    "hr10": 0.2251655629139073,
+    "ndcg10": 0.1256074160337448,
+    "best_val_hr10": 0.3219,
+    "epochs_run": 100,
+    "seconds": 157.8
+  },
+  "mean_pool_s45": {
+    "hr10": 0.08079470198675497,
+    "ndcg10": 0.04299052804708481,
+    "best_val_hr10": 0.1262,
+    "epochs_run": 100,
+    "seconds": 44.3
+  },
+  "sasrec_full_s46": {
+    "hr10": 0.22549668874172185,
+    "ndcg10": 0.12344660609960556,
+    "best_val_hr10": 0.356,
+    "epochs_run": 100,
+    "seconds": 151.0
+  },
+  "sasrec_uniform_s46": {
+    "hr10": 0.2008278145695364,
+    "ndcg10": 0.10699879378080368,
+    "best_val_hr10": 0.3017,
+    "epochs_run": 100,
+    "seconds": 100.4
+  },
+  "sasrec_pos_only_s46": {
+    "hr10": 0.21109271523178808,
+    "ndcg10": 0.11657793819904327,
+    "best_val_hr10": 0.2974,
+    "epochs_run": 100,
+    "seconds": 150.8
+  },
+  "mean_pool_s46": {
+    "hr10": 0.0837748344370861,
+    "ndcg10": 0.04416514188051224,
+    "best_val_hr10": 0.1273,
+    "epochs_run": 100,
+    "seconds": 42.6
+  },
+  "sasrec_full_s47": {
+    "hr10": 0.22864238410596027,
+    "ndcg10": 0.12755098938941956,
+    "best_val_hr10": 0.3472,
+    "epochs_run": 100,
+    "seconds": 143.2
+  },
+  "sasrec_uniform_s47": {
+    "hr10": 0.20695364238410596,
+    "ndcg10": 0.1113874614238739,
+    "best_val_hr10": 0.3118,
+    "epochs_run": 100,
+    "seconds": 95.2
+  },
+  "sasrec_pos_only_s47": {
+    "hr10": 0.2139072847682119,
+    "ndcg10": 0.12175171822309494,
+    "best_val_hr10": 0.2896,
+    "epochs_run": 100,
+    "seconds": 143.0
+  },
+  "mean_pool_s47": {
+    "hr10": 0.08758278145695364,
+    "ndcg10": 0.04504165053367615,
+    "best_val_hr10": 0.13,
+    "epochs_run": 100,
+    "seconds": 41.6
+  }
+}

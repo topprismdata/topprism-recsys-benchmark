@@ -1,0 +1,90 @@
+[data] users=6040 items=3416 events=999611
+[train] mean_pool
+  [mean_pool] epoch 5 loss=4.4313 val_hr10=0.0263
+  [mean_pool] epoch 10 loss=4.0167 val_hr10=0.0520
+  [mean_pool] epoch 15 loss=3.8669 val_hr10=0.0616
+  [mean_pool] epoch 20 loss=3.7619 val_hr10=0.0704
+  [mean_pool] epoch 25 loss=3.6739 val_hr10=0.0820
+  [mean_pool] epoch 30 loss=3.6019 val_hr10=0.0912
+  [mean_pool] epoch 35 loss=3.5498 val_hr10=0.0942
+  [mean_pool] epoch 40 loss=3.4978 val_hr10=0.0977
+  [mean_pool] epoch 45 loss=3.4605 val_hr10=0.1031
+  [mean_pool] epoch 50 loss=3.4321 val_hr10=0.1043
+  [mean_pool] epoch 55 loss=3.4009 val_hr10=0.1073
+  [mean_pool] epoch 60 loss=3.3772 val_hr10=0.1081
+  [mean_pool] epoch 65 loss=3.3574 val_hr10=0.1123
+  [mean_pool] epoch 70 loss=3.3411 val_hr10=0.1142
+  [mean_pool] epoch 75 loss=3.3262 val_hr10=0.1182
+  [mean_pool] epoch 80 loss=3.3135 val_hr10=0.1212
+  [mean_pool] epoch 85 loss=3.2990 val_hr10=0.1194
+  [mean_pool] epoch 90 loss=3.2899 val_hr10=0.1217
+  [mean_pool] epoch 95 loss=3.2785 val_hr10=0.1276
+  [mean_pool] epoch 100 loss=3.2733 val_hr10=0.1273
+[mean_pool] TEST HR@10=0.0825 NDCG@10=0.0448
+[train] gru
+  [gru] epoch 5 loss=4.2762 val_hr10=0.0551
+  [gru] epoch 10 loss=3.3624 val_hr10=0.1611
+  [gru] epoch 15 loss=3.0603 val_hr10=0.2041
+  [gru] epoch 20 loss=2.9099 val_hr10=0.2361
+  [gru] epoch 25 loss=2.8209 val_hr10=0.2469
+  [gru] epoch 30 loss=2.7565 val_hr10=0.2538
+  [gru] epoch 35 loss=2.7087 val_hr10=0.2677
+  [gru] epoch 40 loss=2.6680 val_hr10=0.2687
+  [gru] epoch 45 loss=2.6331 val_hr10=0.2806
+  [gru] epoch 50 loss=2.6040 val_hr10=0.2843
+  [gru] epoch 55 loss=2.5778 val_hr10=0.2939
+  [gru] epoch 60 loss=2.5555 val_hr10=0.2912
+  [gru] epoch 65 loss=2.5345 val_hr10=0.3025
+  [gru] epoch 70 loss=2.5152 val_hr10=0.3088
+  [gru] epoch 75 loss=2.5013 val_hr10=0.3113
+  [gru] epoch 80 loss=2.4876 val_hr10=0.3147
+  [gru] epoch 85 loss=2.4739 val_hr10=0.3217
+  [gru] epoch 90 loss=2.4586 val_hr10=0.3260
+  [gru] epoch 95 loss=2.4503 val_hr10=0.3293
+  [gru] epoch 100 loss=2.4371 val_hr10=0.3343
+[gru] TEST HR@10=0.2190 NDCG@10=0.1152
+[train] sasrec
+  [sasrec] epoch 5 loss=4.8525 val_hr10=0.0209
+  [sasrec] epoch 10 loss=4.4062 val_hr10=0.0462
+  [sasrec] epoch 15 loss=3.4028 val_hr10=0.1705
+  [sasrec] epoch 20 loss=3.0137 val_hr10=0.2232
+  [sasrec] epoch 25 loss=2.8550 val_hr10=0.2497
+  [sasrec] epoch 30 loss=2.7644 val_hr10=0.2745
+  [sasrec] epoch 35 loss=2.7019 val_hr10=0.2826
+  [sasrec] epoch 40 loss=2.6461 val_hr10=0.2901
+  [sasrec] epoch 45 loss=2.6051 val_hr10=0.3000
+  [sasrec] epoch 50 loss=2.5743 val_hr10=0.3127
+  [sasrec] epoch 55 loss=2.5477 val_hr10=0.3174
+  [sasrec] epoch 60 loss=2.5190 val_hr10=0.3195
+  [sasrec] epoch 65 loss=2.4960 val_hr10=0.3260
+  [sasrec] epoch 70 loss=2.4783 val_hr10=0.3344
+  [sasrec] epoch 75 loss=2.4622 val_hr10=0.3377
+  [sasrec] epoch 80 loss=2.4474 val_hr10=0.3439
+  [sasrec] epoch 85 loss=2.4354 val_hr10=0.3459
+  [sasrec] epoch 90 loss=2.4231 val_hr10=0.3450
+  [sasrec] epoch 95 loss=2.4135 val_hr10=0.3488
+  [sasrec] epoch 100 loss=2.4054 val_hr10=0.3495
+[sasrec] TEST HR@10=0.2280 NDCG@10=0.1249
+[train] hstu_aligned
+  [hstu_aligned] epoch 5 loss=4.5161 val_hr10=0.0346
+  [hstu_aligned] epoch 10 loss=3.7277 val_hr10=0.0748
+  [hstu_aligned] epoch 15 loss=3.2131 val_hr10=0.1265
+  [hstu_aligned] epoch 20 loss=2.9619 val_hr10=0.1407
+  [hstu_aligned] epoch 25 loss=2.8308 val_hr10=0.1474
+  [hstu_aligned] epoch 30 loss=2.7412 val_hr10=0.1541
+  [hstu_aligned] epoch 35 loss=2.6710 val_hr10=0.1575
+  [hstu_aligned] epoch 40 loss=2.6156 val_hr10=0.1522
+  [hstu_aligned] epoch 45 loss=2.5707 val_hr10=0.1576
+  [hstu_aligned] epoch 50 loss=2.5347 val_hr10=0.1522
+  [hstu_aligned] epoch 55 loss=2.5012 val_hr10=0.1565
+  [hstu_aligned] epoch 60 loss=2.4765 val_hr10=0.1599
+  [hstu_aligned] epoch 65 loss=2.4485 val_hr10=0.1651
+  [hstu_aligned] epoch 70 loss=2.4264 val_hr10=0.1606
+  [hstu_aligned] epoch 75 loss=2.4086 val_hr10=0.1661
+  [hstu_aligned] epoch 80 loss=2.3908 val_hr10=0.1627
+  [hstu_aligned] epoch 85 loss=2.3779 val_hr10=0.1692
+  [hstu_aligned] epoch 90 loss=2.3609 val_hr10=0.1687
+  [hstu_aligned] epoch 95 loss=2.3507 val_hr10=0.1695
+  [hstu_aligned] epoch 100 loss=2.3392 val_hr10=0.1652
+[hstu_aligned] TEST HR@10=0.1222 NDCG@10=0.0685
+DONE

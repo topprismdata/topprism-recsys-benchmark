@@ -1,0 +1,20 @@
+[data] loading H&M
+[data] hm sample: {'sampled_customers': 40000, 'active_catalog_articles': 5000, 'total_events': 287347, 'sampling_cutoff': '2020-09-08', 'article_universe_cutoff': '2020-09-08', 'seed': 42, 'frozen': True}
+[windows] H&M 40k
+  [hm40k] W1 cutoff=2020-08-18 cands=3723200 feat=3723200 (94s)
+  [hm40k] W2 cutoff=2020-08-25 cands=3723200 feat=3723200 (98s)
+  [hm40k] W3 cutoff=2020-09-01 cands=3723200 feat=3723200 (99s)
+  [hm40k] W4 cutoff=2020-09-08 cands=3723200 feat=3723200 (102s)
+[batch A] H&M L=50 (alignment correction check)
+[hm] LightGBM B1/B2 (L-invariant)
+[hm_L50] trained+evaluated mean_pool map12=0.0348 (71s)
+[hm_L50] trained+evaluated gru map12=0.0343 (72s)
+[hm_L50] trained+evaluated sasrec map12=0.0339 (83s)
+[hm_L50] trained+evaluated hstu_aligned map12=0.0176 (81s)
+[batch B] H&M L=200 (long sequence)
+[hm_L200] trained+evaluated mean_pool map12=0.0345 (74s)
+[hm_L200] trained+evaluated gru map12=0.0355 (83s)
+[hm_L200] trained+evaluated sasrec map12=0.0342 (133s)
+[hm_L200] trained+evaluated hstu_aligned map12=0.0209 (120s)
+[swire] skipped (set RUN_SWIRE=1 to include swire batches)
+DONE in 1175.6s

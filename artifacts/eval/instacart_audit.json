@@ -1,0 +1,35 @@
+{
+  "raw": {
+    "users": 206209,
+    "products": 49685,
+    "events": 33819106
+  },
+  "after_5core": {
+    "users": 205839,
+    "products": 47975,
+    "events": 33812196
+  },
+  "events_per_user": {
+    "mean": 164.3,
+    "median": 91.0,
+    "p10": 24.0,
+    "p90": 396.0,
+    "min": 5,
+    "max": 3725
+  },
+  "orders_per_user_median": null,
+  "basket_sizes": {
+    "mean": 10.11,
+    "median": 8.0
+  },
+  "users_len_ge2": 205839,
+  "protocol": {
+    "core": "5-core iterative (users+products)",
+    "ordering": "order_number asc, add_to_cart_order asc (real within-basket order)",
+    "dense_note": "flattened SKU events; comparable to ML-1M ratings events"
+  },
+  "orders_per_user": {
+    "mean": 16.2,
+    "median": 10.0
+  }
+}
